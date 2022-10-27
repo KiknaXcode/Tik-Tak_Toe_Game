@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <!--დასაწყისის სტილიზაცია. მოთამაშეების არჩევა --> 
+
+<div id="first-page">
+
+    <svg id="first-page-logo" width="72" height="32" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M8.562 1.634 16 9.073l7.438-7.439a3 3 0 0 1 4.243 0l2.685 2.685a3 3 0 0 1 0 4.243L22.927 16l7.439 7.438a3 3 0 0 1 0 4.243l-2.685 2.685a3 3 0 0 1-4.243 0L16 22.927l-7.438 7.439a3 3 0 0 1-4.243 0L1.634 27.68a3 3 0 0 1 0-4.243L9.073 16 1.634 8.562a3 3 0 0 1 0-4.243L4.32 1.634a3 3 0 0 1 4.243 0Z" fill="#31C3BD"/><path d="M56.1 0c8.765 0 15.87 7.106 15.87 15.87 0 8.766-7.105 15.871-15.87 15.871-8.765 0-15.87-7.105-15.87-15.87C40.23 7.106 47.334 0 56.1 0Zm0 9.405a6.466 6.466 0 1 0 0 12.931 6.466 6.466 0 0 0 0-12.931Z" fill="#F2B137" fill-rule="nonzero"/></g></svg>
+    <div class="pickPlayer">
+        <h2>PICK PLAYER 1’S MARK</h2>
+        <div class="which-one">
+            <div id="x-picker">
+                X
+            </div>
+            <div id="o-picker">
+                O
+            </div>
+        </div>
+
+        <h2>REMEMBER : X GOES FIRST</h2>
+    </div>
+
+    <div id="new-game-cpu">NEW GAME (VS CPU)</div>
+    <div id="new-game-player">NEW GAME  (VS PLAYER)</div>
+
+</div>
+
+
+
+
+
+    <!--დასაწყისის სტილიზაცია. მოთამაშეების არჩევა --> 
+
+
+
+
+
+<div id="main-play">    <!--მთავარი სათამაშო სოვრცე-->
+    <header>
+        <svg width="72" height="32" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M8.562 1.634 16 9.073l7.438-7.439a3 3 0 0 1 4.243 0l2.685 2.685a3 3 0 0 1 0 4.243L22.927 16l7.439 7.438a3 3 0 0 1 0 4.243l-2.685 2.685a3 3 0 0 1-4.243 0L16 22.927l-7.438 7.439a3 3 0 0 1-4.243 0L1.634 27.68a3 3 0 0 1 0-4.243L9.073 16 1.634 8.562a3 3 0 0 1 0-4.243L4.32 1.634a3 3 0 0 1 4.243 0Z" fill="#31C3BD"/><path d="M56.1 0c8.765 0 15.87 7.106 15.87 15.87 0 8.766-7.105 15.871-15.87 15.871-8.765 0-15.87-7.105-15.87-15.87C40.23 7.106 47.334 0 56.1 0Zm0 9.405a6.466 6.466 0 1 0 0 12.931 6.466 6.466 0 0 0 0-12.931Z" fill="#F2B137" fill-rule="nonzero"/></g></svg>
+        <div id="which-turn">
+            <span id="switch">X</span><span>TURN</span>
+        </div>
+        <button class="reset-button">
+            <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M19.524 0h-1.88a.476.476 0 0 0-.476.499l.159 3.284A9.81 9.81 0 0 0 9.835.317C4.415.317-.004 4.743 0 10.167.004 15.597 4.406 20 9.835 20a9.796 9.796 0 0 0 6.59-2.536.476.476 0 0 0 .019-.692l-1.348-1.349a.476.476 0 0 0-.65-.022 6.976 6.976 0 0 1-9.85-.63 6.987 6.987 0 0 1 .63-9.857 6.976 6.976 0 0 1 10.403 1.348l-4.027-.193a.476.476 0 0 0-.498.476v1.881c0 .263.213.476.476.476h7.944A.476.476 0 0 0 20 8.426V.476A.476.476 0 0 0 19.524 0Z" fill="#1F3641"/></svg>  
+        </button>
+    </header>
+
+    
+
+    <div class="center">
+        <div class="main-container">
+            <div class="inner-style"  id="0-0"></div>
+            <div class="inner-style"  id="0-1"></div>
+            <div class="inner-style"  id="0-2"></div>
+            <div class="inner-style"  id="1-0"></div>
+            <div class="inner-style"  id="1-1"></div>
+            <div class="inner-style"  id="1-2"></div>
+            <div class="inner-style"  id="2-0"></div>
+            <div class="inner-style"  id="2-1"></div>
+            <div class="inner-style"  id="2-2"></div>
+            
+        </div>
+    </div>
+
+
+    <footer>
+        <div id="x" style="background-color: #31C3BD;">
+            <p>X (P2)</p>
+            <h3 id="counter-x">0</h3>
+        </div>
+        <div id="ties" style="background-color: #A8BFC9;">
+            <p>TIES</p>
+            <h3 id="counter-ties">0</h3>
+        </div>
+        <div id="o" style="background-color: #F2B137;">
+            <p>O (P1)</p>
+            <h3 id="counter-o">0</h3>
+        </div>
+    </footer>
+
+
+</div>   <!--მთავარი სათამაშო სოვრცე-->
+
+
+
+<div id="which-one-won">  <!-- რომელმა მოთამაშემ მოიგო, მაგ ბანერს აგდებს -->
+
+    <h3 id="oh-no">OH NO, YOU LOST…</h3>
+
+    <h1 id="general-change-who-won">X TAKES THE ROUND</h1>
+
+    <div>
+        <div class="quit">
+            QUIT
+        </div>
+
+        <div class="next-round">
+            NEXT ROUND
+        </div>
+    </div>
+
+
+
+</div>   <!-- რომელმა მოთამაშემ მოიგო, მაგ ბანერს აგდებს -->
+
+
+
+    <script src="logic.js" type="module"></script>
+    <!--<script src="cpu.js" type="module"></script>-->
+
+    
+    
+</body>
+</html>

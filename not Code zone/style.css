@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+}
+
+
+body {
+    background-color:#1A2A33;
+}
+
+
+
+/* დასაწყისის სტილიზაცია. მოთამაშეების არჩევა */
+
+#first-page {
+    display: initial;
+}
+
+
+#first-page-logo {
+    display: block;
+    margin-top: 128px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pickPlayer {
+    background: #1F3641;
+    box-shadow: inset 0px -8px 0px #10212A;
+    border-radius: 15px;
+    text-align: center;
+    height: 205px;
+    width: 327px;
+    margin: 28px auto;
+    border: 1px solid #1F3641
+}
+
+.pickPlayer > h2 {
+    margin-top: 24px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #A8BFC9;
+}
+
+.pickPlayer > .which-one {
+    background-color: #1A2A33;
+    border-radius: 10px;
+    height: 72px;
+    width: 279px;
+    margin: 24px;
+    display: flex;
+
+
+}
+
+#x-picker {
+    height: 54px;
+    width: 132px;
+    border-radius: 10px;
+    margin: 9px;
+    display: flex;
+    justify-content: center;
+    background-color: #1A2A33;
+    align-items: center;
+    font-size: 50px;
+    color: #A8BFC9;
+    cursor: pointer;
+    transition: 0.8s;
+
+}
+
+#x-picker:hover {
+    background-color: #1F3641;
+}
+
+
+
+#o-picker {
+    height: 54px;
+    width: 132px;
+    border-radius: 10px;
+    background-color: #A8BFC9;
+    margin: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+    transition: 0.8s;
+    
+}
+
+#o-picker:hover {
+    background-color: #1F3641;
+}
+
+
+#new-game-cpu {
+    background: #F2B137;
+    box-shadow: inset 0px -8px 0px #CC8B13;
+    border-radius: 15px;
+    height: 56px;
+    width: 327px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.25s;
+
+}
+
+#new-game-cpu:hover {
+    background-color: #CC8B13;
+}
+
+#new-game-player {
+    background: #31C3BD;
+    box-shadow: inset 0px -8px 0px #118C87;
+    border-radius: 15px;
+    height: 56px;
+    width: 327px;
+    margin: 16px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+#new-game-player:hover {
+    background: #118C87;
+}
+
+
+
+
+/* დასაწყისის სტილიზაცია. მოთამაშეების არჩევა */
+
+
+
+
+
+/*    მთავარი სათამაშო სივრცე */
+
+/*სათაურის ნაწილი*/
+
+#main-play {
+    display: none;
+}
+
+header {
+    margin: 23px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 355px;
+
+}
+
+
+#which-turn {
+    background: #1F3641;
+    box-shadow: inset 0px -4px 0px #10212A;
+    border-radius: 5px;
+    width: 96px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 18px;
+    color: #A8BFC9;
+}
+
+#which-turn > #switch {
+    font-size: 18px;
+    line-height: 18px;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #A8BFC9; 
+}
+
+
+.reset-button {
+    height: 40px;
+    width: 40px;
+    background: #A8BFC9;
+    box-shadow: inset 0px -4px 0px #6B8997;
+    border-radius: 5px;
+}
+
+
+/*სათაურის ნაწილი*/
+
+
+
+/* მთავარი ნაწილი*/
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+}
+
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(3, 96px);
+    grid-template-rows: 96px 96px 96px;
+    grid-gap: 20px;
+}
+
+
+
+.inner-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F3641;
+    box-shadow: inset 0px -8px 0px #10212A;
+    border-radius: 10px;
+    color: #31C3BD;
+    font-size: 34px;
+}
+
+
+
+.winner-style {
+    background-color: rgb(36, 122, 144);
+}
+
+.winner-style-second {
+    background-color: #F2B137;
+}
+
+/* მთავარი ნაწილი*/
+
+
+/* ფოოთერის ნაწილი */
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 355px;
+    gap: 20px;
+    margin: 28px auto;
+}
+
+footer div {
+    width: 96px;
+    height: 64px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+footer div p {
+    margin-top: 12px;
+}
+
+/* ფოოთერის ნაწილი */
+
+
+/*    მთავარი სათამაშო სივრცე */
+
+
+
+/* რომელმა მოთამაშემ მოიგო, მაგ ბანერს აგდებს */
+
+
+#which-one-won {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 228px;
+    background: #1F3641;
+    top: 200px;
+    margin: auto;
+    border: 1px solid #1F3641;
+    text-align: center;
+}
+
+#which-one-won > h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.875px;
+    color: #A8BFC9;
+    margin-top: 40px;
+
+}
+
+#general-change-who-won {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+    color: #31C3BD;
+    margin: 24px;
+
+}
+
+#change-who-won {
+    font-size: 35px;
+    margin-right: 10px;
+}
+
+#which-one-won > div {
+    margin: auto;
+    width: 64%;
+    height: 70px;
+    display: flex;
+}
+
+.quit {
+    flex: 1;
+    margin-right: 16px;
+    background: #A8BFC9;
+    box-shadow: inset 0px -4px 0px #6B8997;
+    border-radius: 10px;
+    border-radius: 10px;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.next-round {
+    flex: 2;
+    background: #F2B137;
+    box-shadow: inset 0px -4px 0px #CC8B13;
+    border-radius: 10px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+/* რომელმა მოთამაშემ მოიგო, მაგ ბანერს აგდებს */
+
+
+
+
+
